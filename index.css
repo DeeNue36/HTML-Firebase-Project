@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  hsl(264, 100%, 61%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white !important;
+    margin-top: 150px;
+    padding: 60px 40px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.sign-in h2{
+    margin-bottom: 20px;
+}
+
+.sign-in p{
+    margin-bottom: 20px;
+}
+
+.sign-in a{
+    text-decoration: none;
+    font-size: 20px;
+    color: lightgreen;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid lightgreen;
+    outline: none;
+    margin-top: 15px;
+}
+
+.email-contact{
+    margin-top: 15px;
+    /* margin-left: 20px; */
+}
+
+.btn-contact{
+    width: 85px;
+    height: 35px;
+    /* padding: 10px 15px; */
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: #E71D36;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn-contact:hover{
+    border: 2px solid #E71D36;
+    background-color: white;
+    color: #E71D36;
+}
+
+/* .text:active{
+    font: bold 10px 'Quicksand';
+    transition: all 0.2s;
+} */
+
+/* .button--loading .text{
+    visibility: hidden;
+    opacity: 0;
+} */
+
+.button--loading::after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    /* background: red; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid transparent;
+    border-top-color: lightgreen;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+    from{
+        transform: rotate(0turn);
+    }
+
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+#msg{
+    margin-top: 10px;
+    background-color: lightgreen;
+    padding: 10px 15px;
+    display: none;
+}

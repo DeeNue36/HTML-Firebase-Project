@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Sign-in Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sign-in">
+            <h2>Welcome To The Pavilion</h2>
+            <p>Already have an account? <a href="#SignIn">Sign in</a></p>
+            <form id='submit'>
+            <div class="name">
+               <h4>Enter Your name</h4>
+             <input type="name" id="name" required="">
+           </div> 
+            <div class="message">
+               <h4>Enter Your Message</h4>
+             <input type="text" id="message" required="">
+           </div> 
+           <p id='msg'></p>
+            <div class="email-contact">
+                <button type="submit" class="btn-contact" id="contact">
+                 <span class="text" id="text">
+                    Contact Us
+                 </span>
+                </button>
+             </div>
+            </form> 
+        </div>
+    </div>
+    <script type="module" src="/index.js"></script>
+    <!-- <script src="/node_modules/firebase/firebase-app.js"></script>
+    <script src="/node_modules/firebase/firebase-auth.js"></script>
+    <script src="/node_modules/firebase/firebase-firestore.js"></script> -->
+</body>
+
+</html>
